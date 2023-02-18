@@ -90,3 +90,29 @@
     flex-direction: column;
     gap: 9px;
 }
+.skills {
+    width: 100%;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.progres {
+    height: 5px;
+    background: #FFB400;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
