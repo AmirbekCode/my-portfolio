@@ -7,8 +7,8 @@ import { Divider } from '@chakra-ui/react'
 import Counter from '../Count/Counter'
 import { useState } from 'react'
 import Loader from '../loaderSkill/Loader'
-
-
+import Icon from '../../assets/Icons.svg'
+import Vector from "../../assets/Vector.png"
 export default function Slidebar({ countt, setCountt }) {
     const [state, setState] = useState(90)
 
@@ -57,24 +57,24 @@ export default function Slidebar({ countt, setCountt }) {
             </div>
             <div className="divider"></div>
             <div className="skills">
-                <h2>Skills</h2>
+                <h2 className='skill_title'>Skills</h2>
                 <div className="skills-item">
                     <div className="skills_item">
-                        <span className=''>HTML</span>
+                        <span className='skill_name'>HTML</span>
                         <Loader state={90} />
                     </div>
                     <div>
                         <div className="progres" style={{ width: "90%" }}></div>
                     </div>
                     <div className="skills_item">
-                        <span>CSS</span>
+                        <span className='skill_name' >CSS</span>
                         <Loader state={80} />
                     </div>
                     <div>
                         <div className="progres" style={{ width: "80%" }}></div>
                     </div>
                     <div className="skills_item">
-                        <span>ReactJS</span>
+                        <span className='skill_name'>ReactJS</span>
                         <Loader state={50} />
                     </div>
                     <div>
@@ -82,11 +82,32 @@ export default function Slidebar({ countt, setCountt }) {
                     </div>
                 </div>
             </div>
+            <div className="extraskills">
+                <h2 className='Extra'>Extra Skills</h2>
+                <div className="extraskill_items">
+                    <div className="extraskill_item">
+                        <img src={Icon} />
+                        <span className="extraskill_title">
+                            Bootstrap, Materialize
+                        </span>
+                    </div>
+                    <div className="extraskill_item">
+                        <img src={Icon} />
+                        <span className="extraskill_title">
+                            Stylus, Sass, Less
+                        </span>
+                    </div>
+                    <div className="extraskill_item">
+                        <img src={Icon} />
+                        <span className="extraskill_title">
+                            Gulp, Webpack, Grunt
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <button className='downloadsvg'>Download cv
+            <img src={Vector} className="ccc" />
+            </button>
         </div>
     )
 }
-{/* 
-                <Loader state={30}/>
-                <Loader state={20}/>
-                <Loader state={80}/>
-                <Loader state={20}/> */}

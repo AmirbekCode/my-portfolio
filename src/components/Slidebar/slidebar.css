@@ -7,6 +7,7 @@
     flex-direction: column;
     height: 100vh;
     width: 365px;
+    position: fixed;
 }
 
 .profile_section {
@@ -71,7 +72,7 @@
     width: 100%;
 }
 
-.infos h2{
+.infos h2 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -84,19 +85,33 @@
     padding: 5px 7px;
 }
 
-.titles , 
+.titles,
 .infos {
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
+
 .skills {
     width: 100%;
     padding: 0px 40px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+
 }
+
+.skill_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    color: #2B2B2B;
+
+}
+
 .skills-item {
     display: flex;
     flex-direction: column;
@@ -115,4 +130,68 @@
     background: #FFB400;
     border-radius: 3px;
     margin-bottom: 25px;
+    border: 1px solid #7676765b;
+}
+
+.skill_name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+    color: #767676;
+
+}
+
+.extraskills {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Extra {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    color: #2B2B2B;
+}
+
+.extraskill_items {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.extraskill_item {
+    display: flex;
+    gap: 15px;
+}
+
+.extraskill_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+    color: #767676;
+}
+
+.downloadsvg {
+    background: #FFB400;
+    width:220px;
+    height:40px;
+    border: none;
+}
+
+.ccc {
+    margin-left: 5px;
 }
