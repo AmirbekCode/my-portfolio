@@ -1,14 +1,93 @@
 .Main {
-    height: 150vh;
-    grid-area: 1 / 3 / 2 / 9; 
+    grid-area: 1 / 3 / 2 / 9;
     z-index: 9;
-    width: 1632px;
-    height: 918px;
+    height: 100vh;
+
 }
 
 .Main_section {
-    background-image: url('../../assets/Her.png');
-    width: 1632px;
-    height: 918px;
+    background-image: url('../../assets/HERO.png');
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 45%;
     background-size: cover;
+
+}
+
+.info_section {
+    display: flex;
+    flex-direction: column;
+justify-content: start;
+    align-items: start;
+    padding: 60px 15px;
+}
+
+.myname_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.myname {
+    font-family: 'Inter';
+    margin-right:50px;
+    font-style: normal;
+    align-items: start;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 123.6%;
+    color: #2B2B2B;
+    margin-bottom: 18px;
+}
+
+.yellow {
+    color: #FFB400;
+    font-family: 'Inter';
+    font-style: normal;
+    align-items: start;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 123.6%;
+    margin-bottom: 18px;
+}
+
+.info_description {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+width: 424px;
+text-transform: capitalize;
+font-feature-settings: 'calt' off, 'kern' off;
+color: #767676;
+margin-bottom: 25px;
+}
+
+.info_button {
+    width: 154px;
+    height: 51px;
+    background: #FFB400;
+    border-radius: 5px;
+    border: none;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.fa-arrow-right {
+        animation: example 2s linear infinite alternate;
+}
+
+@keyframes example {
+    0% {
+        transform: translate(20px);
+        color: #fff;
+    }
+    
+    100% {
+        transform: translate(0px);
+        color: #000;
+    }
 }

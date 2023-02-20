@@ -1,0 +1,28 @@
+body {
+    --black: #111111;
+    --white: #fdfdfd;
+    --green: #22cc88;
+    --blue: #0055ff;
+    --purple: #8855ff;
+    --red: #ff0055;
+    --orange: #ee4444;
+    --yellow: #ffcc00;
+    --mustard: #ffaa00;
+    --accent: var(--black);
+  
+    margin: 0;
+    padding: 0;
+    color: var(--accent);
+    padding-bottom: 100px;
+  }
+    
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: #FFB400;
+    transform-origin: 0%;
+  }
+  

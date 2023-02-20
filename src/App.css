@@ -6,16 +6,19 @@
   text-decoration: none;
 }
 
+
+
 .App {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  height: 200vh;
 } 
 
 body {
-  background: #F0F0F6;
+  background: #e5e5e5d4;
 }
 
 .divider {

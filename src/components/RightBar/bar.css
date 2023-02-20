@@ -1,0 +1,87 @@
+.Bar {
+    width: 108px;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #FAFAFA;
+    box-shadow: 4px 0px 10px rgba(47, 122, 249, 0.1);
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 52px 34px;
+    flex-direction: column;
+    gap:200px;
+    z-index: 999;
+}
+
+.nightmode {
+    width: 45px;
+    height: 45px;
+    background: none;
+    border: none;
+}
+
+.buttons_section {
+    display: flex;
+    flex-direction: column;
+    gap:43px;
+}
+
+.buttons_section i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    padding: 11px 12px;
+    background: #F0F0F6;
+    border-radius:50% ;
+    color: #767676;
+    transition: 0.4s;
+}
+.buttons_section i:hover {
+    background: #FFB400;
+    color: #000;
+
+}
+
+
+   .animebtn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: 0.4s;
+   }
+   
+   .animebtn .tooltiptext {
+    visibility: hidden;
+    font-family: 'Poppins';
+    min-width:70px;
+    background-color:#2B2B2B;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 3px;
+    position: absolute;
+    z-index: 1;
+    top: -35px;
+    left: -15px;
+
+   }
+   
+   .animebtn .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 115%;
+    right: 45%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+    rotate: -90deg;
+   }
+   
+   .animebtn:hover .tooltiptext {
+    visibility: visible;
+   }
