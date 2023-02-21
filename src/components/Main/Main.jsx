@@ -36,8 +36,8 @@ export default function Main() {
                             return (
                                 <div className="Box">
                                     <img src={item.url} className="imgService" />
-                                    <h2>{item.title}</h2>
-                                    <p>{item.description}</p>
+                                    <h2 className="colorw">{item.title}</h2>
+                                    <p className="colorw">{item.description}</p>
                                 </div>
                             )
                         })

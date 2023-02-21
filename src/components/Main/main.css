@@ -18,7 +18,7 @@
 .info_section {
     display: flex;
     flex-direction: column;
-justify-content: start;
+    justify-content: start;
     align-items: start;
     padding: 60px 15px;
 }
@@ -31,7 +31,7 @@ justify-content: start;
 
 .myname {
     font-family: 'Inter';
-    margin-right:50px;
+    margin-right: 50px;
     font-style: normal;
     align-items: start;
     font-weight: 700;
@@ -54,15 +54,15 @@ justify-content: start;
 
 .info_description {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-width: 424px;
-text-transform: capitalize;
-font-feature-settings: 'calt' off, 'kern' off;
-color: #767676;
-margin-bottom: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 424px;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+    color: #767676;
+    margin-bottom: 25px;
 }
 
 .info_button {
@@ -77,7 +77,7 @@ margin-bottom: 25px;
 }
 
 .fa-arrow-right {
-        animation: example 2s linear infinite alternate;
+    animation: example 2s linear infinite alternate;
 }
 
 @keyframes example {
@@ -85,7 +85,7 @@ margin-bottom: 25px;
         transform: translate(20px);
         color: #fff;
     }
-    
+
     100% {
         transform: translate(0px);
         color: #000;
@@ -101,8 +101,9 @@ margin-bottom: 25px;
     align-items: center;
     flex-direction: column;
     gap: 15px;
-
-}
+    transition: 0.7s;
+    cursor: pointer;
+    }
 
 .imgService {
     margin-bottom: 20px;
@@ -113,25 +114,36 @@ margin-bottom: 25px;
     margin-top: 80px;
     flex-direction: column;
     align-items: center;
-
 }
 
-.servicecARD{
+.servicecARD {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 25px;
-        grid-row-gap: 25px;
+.Box:hover {
+    background: #000;
+    scale: 1.1;
+}
+
+.Box:hover .colorw{
+    color:#fff;
 }
 
 .sectionName {
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 123.6%;
-text-transform: capitalize;
-color: #2B2B2B;
-margin: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    color: #2B2B2B;
+    margin: 40px;
+}
+
+.progress-bar {
+    z-index: 999;
 }
